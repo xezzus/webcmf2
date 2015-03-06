@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BEST HEAD - <!-- [title] --></title>
+</head>
+<body>
+<div style="background:#ccc;">
+  <!-- {nameView} -->
+</div>
+<div style="background:red;">
+  <!-- {nameView2} -->
+</div>
+
+<div style="background:#555;">
+  <?php app::nameApp(); ?>
+  <?php var_dump(app::nameApp2()); ?>
+</div>
+
+
+<ul>
+<li><a href="/page1">page1</a></li>
+<li><a href="/page2">page2</a></li>
+<li><a href="/page3">page3</a></li>
+</ul>
+<ul>
+<li> <a href="/page1/page2">page1-page2</a></li>
+<li><a href="/page2/page3">page2-page3</a></li>
+<li><a href="/page3/page4">page3-page4</a></li>
+</ul>
+<ul>
+<li><a href="/page1/page2/page3">page1-page2-page3</a></li>
+<li><a href="/page2/page3/page4">page2-page3-page4</a></li>
+<li><a href="/page3/page4/page5">page3-page4-page5</a></li>
+</ul>
+</body>
+</html>
