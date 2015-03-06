@@ -16,9 +16,9 @@ class site {
       $nextUri = implode('/',array_slice($uri,0,$i+1));
       $isFile = $path.$nextUri.'/index.phtml';
       if(is_file($isFile)) break;
-      else $isFile = false;
+      else $isFile = null;
     }
-    if($isFile) return $isFile;
+    if(!empty($uri) && isset($isFile)) return $isFile;
     else if(is_file($path.'index.phtml')) return $path.'index.phtml';
   }
 
